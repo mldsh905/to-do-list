@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+.window,.window1{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.8);
+}
+
+.modal,.modal1{
+    background-color: gainsboro;
+    display: grid;
+    height: 300px;
+    width: 500px;
+    border-radius: 50px;
+}
+.modal-header,.modal-header1{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    font-size: 2rem;
+    align-items: center;
+}
+.modal-content,.modal-content1{
+    display: grid;
+    justify-content: center;
+}
+.modal-content form,.modal-content1 form{
+    display: grid;
+    grid-auto-flow: row;
+    width: 300px;
+}
+.mbtn,.mbtn1{
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    gap: 100px;
+    height: 80px;
+    align-items: center;
+}
+.mbtn button,.mbtn1 button{
+    width: 80px;
+}
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+.header{
+    background-color: yellow;
+    font-weight: 700;
+    display: grid;
+    align-items: center;
+    font-size: 2rem;
+    padding: 0 60px;
+    min-width: 250px;
+}
+.body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.sidebar{
+    display: grid;
+    background-color: yellowgreen;
+    align-content: space-between;
+    padding: 30px;
+}
+.sidebar ul{
+    display: grid;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+.sidebar li{
+    text-align: center;
+    background-color: #bfa;
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.add-btn{
+    font-size: 2rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-weight: 700;
+    height: 50px;
+    width: 50px;
+    background-color: grey;
+    color: orange;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.content{
+    background-color: orange;
+    display: grid;
+    padding: 10px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    align-content: start;
+}
+.sublist{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 9fr 4fr;
+    height: 40px;
+    background-color: grey;
+    align-items: center;
+    border-radius: 10px;
+}
+.checked{
+    background-color: gainsboro;
+    color: #E5E7EB;
+}
+.sublist-left,.sublist-right{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+.sublist-left{
+    justify-content: start;
+    grid-template-columns: auto 3fr 7fr;
+    overflow: hidden;
+}
+.sublist-task,.sublist-detail{
+    overflow: hidden;
+}
+.sublist-right{
+    justify-content: end;
+}

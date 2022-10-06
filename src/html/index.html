@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <script src="https://kit.fontawesome.com/7fc1a70364.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../../dist/webpack.js" defer></script>
+</head>
+<body>
+<div class="window">
+    <div class="modal">
+        <div class="modal-header">
+            <div class="modal-title">Edit Task</div>
+        </div>
+        <div class="modal-content">
+            <form action="">
+                <label for="task">Task</label>
+                <input type="text" id="task">
+                <label for="detail">Detail</label>
+                <textarea id="detail" cols="20" rows="1"></textarea>
+                <label for="ddl">DDL</label>
+                <input type="date" id="ddl">
+                <label for="priority">Priority</label>
+                <select id="priority">
+                    <option value="low" selected>low</option>
+                    <option value="medium">medium</option>
+                    <option value="high">high</option>
+                </select>
+            </form>
+        </div>
+        <div class="mbtn">
+            <button class="modal-btn">Submit</button>
+            <button class="cancel">Cancel</button>
+        </div>
+    </div>
+</div>
+<div class="window1">
+    <div class="modal1">
+        <div class="modal-header1">
+            <div class="modal-title1">Edit Task</div>
+        </div>
+        <div class="modal-content1">
+            <form action="">
+                <label for="task1">Task</label>
+                <input type="text" id="task1">
+                <label for="detail1">Detail</label>
+                <textarea id="detail1" cols="20" rows="1"></textarea>
+                <label for="ddl1">DDL</label>
+                <input type="date" id="ddl1">
+                <label for="priority1">Priority</label>
+                <select id="priority1">
+                    <option value="low" selected>low</option>
+                    <option value="medium">medium</option>
+                    <option value="high">high</option>
+                </select>
+            </form>
+        </div>
+        <div class="mbtn1">
+            <button class="modal-btn1">Submit</button>
+            <button class="cancel1">Cancel</button>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="header">To do list</div>
+    <div class="body">
+        <div class="sidebar">
+            <ul>
+                <li class="all">All task</li>
+                <li class="finished">Finished</li>
+                <li class="to-do">to do</li>
+            </ul>
+            <div class="add-btn"><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div class="content"></div>
+    </div>
+</div>
+</body>
+</html>
